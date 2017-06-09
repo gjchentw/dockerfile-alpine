@@ -1,0 +1,7 @@
+#!/bin/bash
+[[ -f ./setup ]] && source ./setup
+
+pushd /root > /dev/null
+    SYSLOG_OPTION=${SYSLOG_OPTION:-"-O-"}
+    exec su-exec root /sbin/syslogd -nS ${SYSLOG_OPTION}
+popd
