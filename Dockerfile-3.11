@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.11
 MAINTAINER gjchen <gjchen.tw@gmail.com>
 
 RUN	apk --no-cache --no-progress upgrade -f && \
