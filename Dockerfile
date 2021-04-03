@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER gjchen <gjchen.tw@gmail.com>
 
 RUN	apk --no-cache --no-progress upgrade -f && \
 	apk --no-cache --no-progress add openssl bash su-exec s6 tzdata
